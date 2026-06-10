@@ -126,7 +126,7 @@ public class PipelineStatsAggregator(
                 {
                     if (!keyFilter(o.Key)) continue;
                     files++;
-                    bytes += o.Size;
+                    bytes += o.Size.GetValueOrDefault();
                 }
                 token = resp.IsTruncated == true ? resp.NextContinuationToken : null;
             } while (token != null);
