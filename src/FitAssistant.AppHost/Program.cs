@@ -2,18 +2,20 @@ using CommunityToolkit.Aspire.Hosting.RavenDB;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var openAiKeyValue = builder.Configuration["Parameters:openai-api-key"] ?? "";
-var openAiApiKey = builder.AddParameter("openai-api-key", openAiKeyValue, secret: true)
+var openAiApiKey = builder
+    .AddParameter("openai-api-key", secret: true)
     .WithDescription("OpenAI API key.");
 
-var ravenLicenseValue = builder.Configuration["Parameters:ravendb-license"] ?? "";
-var ravenLicense = builder.AddParameter("ravendb-license", ravenLicenseValue, secret: true)
+var ravenLicense = builder
+    .AddParameter("ravendb-license", secret: true)
     .WithDescription("Your Developer license formatted as JSON.");
 
-var maxGlobalRequests = builder.AddParameter("max-global-requests-per-15-min", "100")
+var maxGlobalRequests = builder
+    .AddParameter("max-global-requests-per-15-min", "100")
     .WithDescription("Maximum API requests globally per 15 minutes");
 
-var maxSessionRequests = builder.AddParameter("max-session-requests-per-30-sec", "5")
+var maxSessionRequests = builder
+    .AddParameter("max-session-requests-per-30-sec", "5")
     .WithDescription("Maximum API requests per session per 30 seconds");
 
 var dailyGoalsCadence = builder.AddParameter("daily-goals-cadence-seconds", "86400")
