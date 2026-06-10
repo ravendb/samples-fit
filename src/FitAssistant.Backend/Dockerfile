@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
-COPY ["Directory.Packages.props", "nuget.config", "./"]
+COPY ["Directory.Packages.props", "./"]
 COPY ["src/FitAssistant.Backend/FitAssistant.Backend.csproj", "src/FitAssistant.Backend/"]
 COPY ["src/FitAssistant.ServiceDefaults/FitAssistant.ServiceDefaults.csproj", "src/FitAssistant.ServiceDefaults/"]
 RUN dotnet restore "src/FitAssistant.Backend/FitAssistant.Backend.csproj"
