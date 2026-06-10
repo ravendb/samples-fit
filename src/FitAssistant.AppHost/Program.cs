@@ -73,6 +73,7 @@ var backend = builder.AddDockerfile("backend", "../..", "src/FitAssistant.Backen
     
 
 builder.AddNpmApp("frontend", "../FitAssistant.Frontend", "start")
+    .WithNpmPackageInstallation()
     .WithReference(fitFeed)
     .WaitFor(backend)
     .WaitFor(fitFeed)

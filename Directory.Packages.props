@@ -8,6 +8,7 @@
     <PackageVersion Include="CommunityToolkit.Aspire.Hosting.RavenDB" Version="13.3.0" />
     <PackageVersion Include="CommunityToolkit.Aspire.RavenDB.Client" Version="13.3.0" />
     <PackageVersion Include="CommunityToolkit.Aspire.Hosting.Minio" Version="13.3.0" />
+    <PackageVersion Include="CommunityToolkit.Aspire.Hosting.NodeJS.Extensions" Version="9.9.0" />
     <PackageVersion Include="Aspire.Hosting.AppHost" Version="13.3.2" />
     <PackageVersion Include="Aspire.Hosting.NodeJs" Version="9.5.2" />
     <PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="9.5.2" />
