@@ -31,7 +31,7 @@ serverSettings.Port = 8081;
 serverSettings.TcpPort = 38889;
 
 var ravenServer = builder.AddRavenDB("ravendb", serverSettings)
-    .WithImage("ravendb/ravendb", "7.2.5")
+    .WithImage("ravendb/ravendb", "7.2.6")
     .WithIconName("Database")
     .WithEnvironment("RAVEN_License_Eula_Accepted", "true")
     .WithEnvironment("RAVEN_License", ravenLicense)

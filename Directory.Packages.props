@@ -4,7 +4,7 @@
     <CentralPackageFloatingVersionsEnabled>true</CentralPackageFloatingVersionsEnabled>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="RavenDB.Client" Version="7.2.5" />
+    <PackageVersion Include="RavenDB.Client" Version="7.2.6" />
     <PackageVersion Include="CommunityToolkit.Aspire.Hosting.RavenDB" Version="13.4.0" />
     <PackageVersion Include="CommunityToolkit.Aspire.RavenDB.Client" Version="13.4.0" />
     <PackageVersion Include="CommunityToolkit.Aspire.Hosting.Minio" Version="13.4.0" />
